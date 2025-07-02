@@ -1,0 +1,42 @@
+.template-classic {
+  background-color: #ffffff;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #1e293b;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.template-classic h1 {
+  font-size: 24px;
+  color: #0f172a;
+  margin-bottom: 5px;
+}
+
+.template-classic .contact {
+  font-size: 12px;
+  color: #334155;
+  margin-bottom: 20px;
+}
+
+.template-classic section {
+  margin-bottom: 20px;
+}
+
+.template-classic h2 {
+  font-size: 15px;
+  color: #0f172a;
+  border-bottom: 1px solid #cbd5e1;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+}
+
+.template-classic ul {
+  padding-left: 18px;
+}
+
+.template-classic li {
+  list-style-type: disc;
+}

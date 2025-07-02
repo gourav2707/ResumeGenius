@@ -1,0 +1,151 @@
+/* SavedResume.css */
+
+/* Make the container fill the full width */
+.container {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-danger {
+  color: red;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+   
+}
+
+h5 {
+  font-size: 18px;
+}
+
+.p-4 {
+  padding: 0; /* Remove padding to make it full page */
+}
+
+/* Hide any borders */
+.border {
+  display: none; /* Hide the border */
+}
+
+.rounded {
+  border-radius: 0; /* No rounded corners */
+}
+
+.bg-white {
+  background-color: transparent; /* Remove background color */
+}
+
+.shadow-sm {
+  box-shadow: none; /* Remove shadow */
+}
+
+.d-flex {
+  display: flex;
+  gap: 15px;
+}
+
+.gap-3 {
+  gap: 1rem;
+}
+
+.btn {
+  padding: 12px 20px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-outline-success {
+  border: 1px solid #28a745;
+  color: #28a745;
+  background: white;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Ensure the resume content takes full width without borders */
+.resume-template {
+  width: 100%;
+  min-height: 100%; /* Ensure the template covers the full page height */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  border: none; /* No border */
+}
+
+.template-card-container {
+  position: relative;
+}
+
+.template-card {
+  background-color: transparent; /* Remove background */
+  border: none; /* No border */
+  padding: 0; /* No padding */
+  box-shadow: none; /* Remove shadow */
+  text-align: center;
+  width: 100%;
+}
+
+.template-preview {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.save-btn {
+  display: block;
+  width: 200px;
+  margin: 1.5rem auto;
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.save-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.save-btn:active {
+  transform: translateY(0);
+}
+
+.saveresume-container {
+   
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  
+   
+}
+
+ 

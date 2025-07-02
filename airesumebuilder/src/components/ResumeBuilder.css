@@ -1,0 +1,116 @@
+/* ResumeBuilder.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.form-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.resume-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Section Heading */
+.section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+/* Input and Textarea Fields */
+.input-field,
+.textarea-field,
+.select-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  background-color: #fafbfc;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus,
+.textarea-field:focus,
+.select-field:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Grouped Inputs */
+.multi-input {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.add-btn,
+.remove-btn,
+.submit-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.add-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.add-btn:hover {
+  background-color: #218838;
+}
+
+.remove-btn {
+  background-color: #d54452;
+  color: #fff;
+  width: 100px;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Error Message */
+.error-msg {
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+}

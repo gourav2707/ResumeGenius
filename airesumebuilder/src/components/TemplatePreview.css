@@ -1,0 +1,171 @@
+/* TemplatePreview.css */
+:root {
+  --primary: #2b6cb0;
+  --primary-hover: #2c5282;
+  --secondary: #4a5568;
+  --light-bg: #f7fafc;
+  --border-color: #e2e8f0;
+  --shadow-color: rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.template-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.template-title {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 0.75rem;
+  color: #2d3748;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.template-subtitle {
+  text-align: center;
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+  color: #4a5568;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.template-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.75rem;
+  justify-items: center;
+}
+
+.template-card-container {
+  position: relative;
+  width: 100%;
+  perspective: 1000px;
+}
+
+.template-card {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  text-align: center;
+  overflow: hidden;
+  transition: var(--transition);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.template-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.template-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #1a202c;
+  font-weight: 600;
+  padding: 0 0.5rem;
+}
+
+.template-preview {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  background: var(--light-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.template-image {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: contain;
+  transition: var(--transition);
+  border-radius: 6px;
+}
+
+.template-card:hover .template-image {
+  transform: scale(1.03);
+}
+
+.template-action {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: var(--transition);
+  padding: 0 1.25rem;
+}
+
+.template-card-container:hover .template-action {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.use-btn {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+  font-weight: 500;
+  font-size: 1rem;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.use-btn:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .template-container {
+    padding: 1.5rem;
+  }
+  
+  .template-title {
+    font-size: 1.75rem;
+  }
+  
+  .template-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .template-gallery {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .template-action {
+    opacity: 1;
+    position: static;
+    transform: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .template-card:hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,9 @@
+.btn-outline-light:hover {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.navbar {
+  font-size: 16px;
+  letter-spacing: 0.3px;
+}

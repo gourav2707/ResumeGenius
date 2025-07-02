@@ -1,0 +1,6 @@
+/* RenderTemplate.css */
+.resume-template {
+  width: 100%;
+  min-height: 100%; /* Ensure the template covers the full page height */
+  padding: 0; /* Remove padding */
+}

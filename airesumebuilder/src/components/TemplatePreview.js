@@ -8,8 +8,8 @@ import demoData from "./demoData";
 import { useNavigate } from "react-router-dom";
 import './TemplatePreview.css';
  
-// Import images
-import atsImage from '../images/ats.png'; // Adjust the file name and path
+ 
+import atsImage from '../images/ats.png';  
 import classicImage from '../images/classic.png';
 import modernImage from '../images/modern.png';
 import creativeImage from '../images/creative.png';
@@ -18,31 +18,31 @@ import UserMenu from "./UserMenu";
 function TemplatePreview() {
   const navigate = useNavigate();
 
-  // Template configuration data
+   
   const templates = [
     {
       id: "ats",
       name: "ATS-Friendly",
       component: TemplateATS,
-      image: atsImage, // Use the imported image here
+      image: atsImage,  
     },
     {
       id: "classic",
       name: "Classic",
       component: TemplateClassic,
-      image: classicImage, // Use the imported image here
+      image: classicImage,  
     },
     {
       id: "modern",
       name: "Modern",
       component: TemplateModern,
-      image: modernImage, // Use the imported image here
+      image: modernImage, 
     },
     {
       id: "creative",
       name: "Creative",
       component: TemplateCreative,
-      image: creativeImage, // Use the imported image here
+      image: creativeImage,  
     }
   ];
 

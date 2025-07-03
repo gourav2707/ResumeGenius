@@ -2,6 +2,7 @@ import React from 'react';
 import { signInWithPopup } from 'firebase/auth';
 import { auth, provider } from '../firebase';
 import axios from 'axios';
+import Apis from '../Apis';
 
 const GoogleSignIn = () => {
   const handleGoogleLogin = async () => {
@@ -11,7 +12,7 @@ const GoogleSignIn = () => {
       const token = await user.getIdToken();
 
       // Send token to your backend for verification
-      const res = await axios.post('http://localhost:3000/user/google-login', {
+      const res = await axios.post(Apis.GOOGLE_SIGNUP, {
         token,
       });
 

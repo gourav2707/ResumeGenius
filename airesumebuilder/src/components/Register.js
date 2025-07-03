@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaUser, FaEnvelope, FaLock, FaArrowRight } from 'react-icons/fa';
-import './Register.css'; // We'll create this CSS file
+import './Register.css';  
 import GoogleSignIn from './GoogleSignIn';
 import FirebaseLogin from './FirebaseLogin';
 import Apis from '../Apis';
@@ -12,7 +12,7 @@ const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
-  const [messageType, setMessageType] = useState(''); // 'success' or 'error'
+  const [messageType, setMessageType] = useState('');  
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
 
@@ -35,7 +35,7 @@ const Register = () => {
       setEmail('');
       setPassword('');
       
-      // Optional: Auto-redirect after successful registration
+       
       setTimeout(() => navigate('/login'), 3000);
     } catch (err) {
       console.error(err);

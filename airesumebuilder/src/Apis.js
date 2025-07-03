@@ -1,10 +1,13 @@
+ 
 export default{
-    SIGN_IN:"http://localhost:3000/user/sign-in",
-    SIGN_UP:"http://localhost:3000/user/sign-up",
-    GET_RESUMES:"http://localhost:3000/resume/fetch",
-    DELETE_RESUMES:"http://localhost:3000/resume/delete/",
-    CREATE_RESUME:"http://localhost:3000/resume/create",
-    GET_RESUMES_BY_ID:"http://localhost:3000/resume/fetch/",
-    UPDATE_RESUME:"http://localhost:3000/resume/update/",
-    PUBLIC_RESUME:"http://localhost:3000/resume/public/"
+    SIGN_IN:"https://backend-d5ef.onrender.com/user/sign-in",
+    SIGN_UP:"https://backend-d5ef.onrender.com/user/sign-up",
+    GOOGLE_SIGNUP:"https://backend-d5ef.onrender.com/user/google-login",
+    GET_RESUMES:"https://backend-d5ef.onrender.com/resume/fetch",
+    DELETE_RESUMES:"https://backend-d5ef.onrender.com/resume/delete/",
+    CREATE_RESUME:"https://backend-d5ef.onrender.com/resume/create",
+    GET_RESUMES_BY_ID:"https://backend-d5ef.onrender.com/resume/fetch/",
+    UPDATE_RESUME:"https://backend-d5ef.onrender.com/resume/update/",
+    PUBLIC_RESUME:"https://backend-d5ef.onrender.com/resume/public/",
+    VERIFY_EMAIL:"https://backend-d5ef.onrender.com/verify/${token}"
 }

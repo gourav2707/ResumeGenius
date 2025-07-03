@@ -1,9 +1,10 @@
-// ✅ EditRouter.jsx
+ 
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import CustomEditor from "./CustomEditor";
 import TemplateEditor from "./ResumeEditor";
+import Apis from "../Apis";
 
 const EditRouter = () => {
   const { id } = useParams();
@@ -13,7 +14,7 @@ const EditRouter = () => {
   useEffect(() => {
     const fetchResume = async () => {
       const token = sessionStorage.getItem("token");
-      const res = await axios.get(`http://localhost:3000/resume/fetch/${id}`, {
+      const res = await axios.get(Apis.GET_RESUMES_BY_ID+`/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setResume(res.data.resume);

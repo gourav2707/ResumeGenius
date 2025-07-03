@@ -1,4 +1,4 @@
-// client/src/components/templates/CustomTemplate.jsx
+ 
 import React from 'react';
 
 const CustomTemplate = ({ content }) => {

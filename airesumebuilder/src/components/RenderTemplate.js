@@ -3,7 +3,7 @@ import TemplateClassic from "./templates/TemplateClassic";
 import TemplateModern from "./templates/TemplateModern";
 import TemplateCreative from "./templates/TemplateCreative";
 import TemplateATS from "./templates/TemplateATS";
-import CustomTemplate from "./templates/CustomTemplate"; // ✅ import this
+import CustomTemplate from "./templates/CustomTemplate";  
 
 const RenderTemplate = ({ template, resume }) => {
   switch (template?.toLowerCase()) {
@@ -18,7 +18,7 @@ const RenderTemplate = ({ template, resume }) => {
     case "custom":
       return <CustomTemplate content={resume.customContent} />;
     default:
-      return <div className="text-danger">❌ Invalid template</div>;
+      return <div className="text-danger"> Invalid template</div>;
   }
 };
 

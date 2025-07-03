@@ -1,4 +1,4 @@
-/* ResumeBuilder.css */
+ 
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -29,14 +29,14 @@ body {
   gap: 1.5rem;
 }
 
-/* Section Heading */
+ 
 .section h4 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   color: #222;
 }
 
-/* Input and Textarea Fields */
+ 
 .input-field,
 .textarea-field,
 .select-field {
@@ -57,7 +57,7 @@ body {
   background-color: #fff;
 }
 
-/* Grouped Inputs */
+ 
 .multi-input {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -65,7 +65,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Buttons */
+ 
 .add-btn,
 .remove-btn,
 .submit-btn {
@@ -108,7 +108,7 @@ body {
   background-color: #0056b3;
 }
 
-/* Error Message */
+ 
 .error-msg {
   color: #dc3545;
   font-size: 0.9rem;

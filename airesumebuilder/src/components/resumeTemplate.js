@@ -1,4 +1,4 @@
-// src/components/resumeTemplate.js
+ 
 import demoData from './demoData';
 
 const resumeTemplate = [

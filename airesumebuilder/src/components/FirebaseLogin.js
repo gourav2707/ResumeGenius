@@ -2,6 +2,7 @@ import React from "react";
 import { auth, provider, signInWithPopup } from "../firebase";
 import axios from "axios";
 import { FaUser, FaLock, FaEnvelope, FaGoogle, FaGithub } from 'react-icons/fa';
+import Apis from "../Apis";
 function FirebaseLogin() {
   const handleLogin = async () => {
     try {
@@ -9,7 +10,7 @@ function FirebaseLogin() {
       const user = result.user;
 
       // Send user info to your backend
-      const res = await fetch("http://localhost:3000/user/google-login", {
+      const res = await fetch(Apis.GOOGLE_SIGNUP, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

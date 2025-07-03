@@ -1,33 +1,4 @@
-// // src/components/DraggableField.js
-// import { useDrag } from 'react-dnd';
-
-// const DraggableField = ({ type, label }) => {
-//   const [{ isDragging }, drag] = useDrag(() => ({
-//     type: 'field',
-//     item: { type },
-//     collect: (monitor) => ({
-//       isDragging: monitor.isDragging(),
-//     }),
-//   }));
-
-//   return (
-//     <div
-//       ref={drag}
-//       style={{
-//         opacity: isDragging ? 0.4 : 1,
-//         cursor: 'grab',
-//         background: '#fff',
-//         border: '1px solid #ccc',
-//         padding: '8px',
-//         marginBottom: '8px',
-//       }}
-//     >
-//       {label}
-//     </div>
-//   );
-// };
-
-// export default DraggableField;
+ 
 import { useDrag } from 'react-dnd';
 
 const DraggableField = ({ type, label, icon }) => {

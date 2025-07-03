@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import Apis from "../Apis";
 
 function VerifyEmail() {
     const { token } = useParams();
@@ -7,12 +8,12 @@ function VerifyEmail() {
 
     useEffect(() => {
         const verify = async () => {
-            const response = await fetch('http://localhost:3000/verify/${token}',
+            const response = await fetch(Apis.VERIFY_EMAIL,
                 { method: "GET" }
             );
 
             if (response.redirected) {
-                // Agar backend redirect kar raha hai, to frontend ko bhi navigate karwa do
+           
                 navigate("/sign-in");
             } else if (!response.ok) {
                 alert("Invalid or expired verification link");

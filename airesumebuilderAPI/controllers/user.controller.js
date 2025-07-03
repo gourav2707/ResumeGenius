@@ -59,7 +59,7 @@ export const verifyAccount = async (request,response,next)=>{
      let {email} = request.body;
      User.updateOne({email},{$set:{verified: true}})
      .then(result=>{
-        return response.redirect("https://resumegenius-0w0e.onrender.com");   
+        return response.redirect("https://resumeeegeniuss.netlify.app/login");   
 
      }).catch(err=>{
         return response.status(500).json({error: "Internal Server Error.."});
@@ -174,7 +174,7 @@ const sendEmail = (toEmail) => {
 </p>
  
 <h6>Thanks</h6>
-<b>AI Resume & Card Builder Team</b>`
+<b>ResumeGenius</b>`
 
         };
         transporter.sendMail(mailOptions, function (error, info) {

@@ -59,7 +59,7 @@ export const verifyAccount = async (request,response,next)=>{
      let {email} = request.body;
      User.updateOne({email},{$set:{verified: true}})
      .then(result=>{
-        return response.redirect("https://resumegenius-0w0e.onrender.com/login");   
+        return response.redirect("https://resumegenius-0w0e.onrender.com");   
 
      }).catch(err=>{
         return response.status(500).json({error: "Internal Server Error.."});

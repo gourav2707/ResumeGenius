@@ -8,7 +8,7 @@ function VerifyEmail() {
 
     useEffect(() => {
         const verify = async () => {
-            const response = await fetch(Apis.VERIFY_EMAIL,
+            const response = await fetch(Apis.VERIFY_EMAIL+`/${token}`,
                 { method: "GET" }
             );
 

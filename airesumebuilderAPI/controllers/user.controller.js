@@ -142,7 +142,7 @@ export const verifyEmail = async (req, res) => {
         await user.save();
 
          
-        return res.redirect("http://localhost:3000/sign-in");   
+        return res.redirect("https://backend-d5ef.onrender.com/sign-in");   
     } catch (err) {
         console.error(err);
         return res.status(500).json({ error: "Internal Server Error" });
@@ -167,7 +167,7 @@ const sendEmail = (toEmail) => {
 <p>Thank you to visit us</p>
 <p><b>Click on below button to verify account</b></p>
 <p>
- <form method="post" action="http://localhost:3000/user/verify">
+ <form method="post" action="https://backend-d5ef.onrender.com/user/verify">
   <input type="hidden" value="${toEmail}" name="email"/>
   <button type="submit" style="background-color:mediumseagreen;width:200px;height:60px;color:white;">Verify Your Account</button>
  </form>
